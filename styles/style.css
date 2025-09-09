@@ -10,18 +10,30 @@
     content: '';
     width: 546px;
     height: 100%;
+    opacity: 60%;
+    top: 0;
     bottom: 0;
     background-repeat: no-repeat;
+    background-size: cover;
 }
+.banner-area:before,
+.banner-area:after {
+    z-index: 1;
+}
+.banner-inner {
+    position: relative;
+    z-index: 2;
+}
+
 
 .banner-area:before {
     left: 0;
-    background-image: url(./assets/hero-leaf1.png);
+    background-image: url(../assets/hero-leaf1.png);
 }
 
 .banner-area:after {
     right: 0;
-    background-image: url(./assets/hero-leaf2.png);
+    background-image: url(../assets/hero-leaf2.png);
 }
 
 .categories ul li {
