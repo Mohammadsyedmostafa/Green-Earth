@@ -53,6 +53,46 @@
                 </div>
             </div>
         </section>
+        <!-- Choose Your Trees Section -->
+        <section class="choose-trees-area bg-[#f0fdf4]  py-14 lg:py-[100px]">
+            <div class="w-11/12  lg:w-full max-w-[1650px] mx-auto">
+                <h3 class="text-3xl font-semibold text-center mb-10 text-[#1f2937]">Choose Your Trees</h3>
+                <div class="choose-trees-inner grid grid-cols-1 lg:grid-cols-12 gap-[30px] mx-4">
+                    <aside class="categories col-span-full lg:col-span-2 order-2 lg:order-1 text-center lg:text-left">
+                        <h4 class="text-xl font-semibold">Categories</h4>
+                        <ul id="categories-wrapper" class="mt-4 space-y-2">
+                            <div class="category-label"><li onclick="getAllTrees('https://openapi.programming-hero.com/api/plants')" class="category-li text-base cursor-pointer p-2 active">All Trees</li></div>
+                        </ul>
+                    </aside>
+                    <section id="tree-showcase-wrapper" class="tree-showcase col-span-full lg:col-span-8 grid grid-cols-1 lg:grid-cols-3 gap-[30px] order-3 lg:order-2">
+                        
+                    </section>
+                    <aside class="green-earth-cart col-span-full lg:col-span-2 bg-white rounded-2xl p-4 order-1 lg:order-3">
+                        <h3 class="text-xl font-semibold">Your Cart</h3>
+                        <div id="cart-item-wrapper" class="cart-item-wrapper">
+                            
+                        </div>
+                        <div id="cart-total-wrapper" class="cart-total justify-between border-t border-[#1f29371a] text-base font-medium text-[#1f2937] mt-2 pt-2 hidden"></div>
+                    </aside>
+                </div>
+            </div>
+            
+        <!-- Open the modal using ID.showModal() method -->
+            
+            <dialog id="plant_details" class="modal modal-bottom sm:modal-middle">
+            <div class="modal-box">
+                <div id="details-container">
+
+                </div>
+                <div class="modal-action">
+                <form method="dialog">
+                    <!-- if there is a button in form, it will close the modal -->
+                    <button class="btn">Close</button>
+                </form>
+                </div>
+            </div>
+            </dialog>
+        </section>
     </main>
     <footer>
 
